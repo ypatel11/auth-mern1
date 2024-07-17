@@ -26,7 +26,7 @@ const data = {
 
 async function formSubmit(e) {
   try {
-    const res = await axios.post("http://localhost:1107/auth/login", data);
+    const res = await axios.post("https://auth-mern1-api.vercel.app/auth/login", data);
     if (res) {
       //to store data from DB to browser
       window.localStorage.setItem(
