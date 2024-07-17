@@ -36,7 +36,7 @@ async function handleSubmit() {
   //     data
   // ).then(console.log("success")).catch(console.log("error"))
   try {
-    const res = await axios.post("http://localhost:1107/auth/signup", data);
+    const res = await axios.post("https://auth-mern1-api.vercel.app/auth/signup", data);
 
     if (res) {
       toast.success(res.data.message);
